@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.title {
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+.body {
+    text-align: center;
+    margin-top: 30Px;
+    margin-left: 140px;
+    margin-right: 140px;
+    height: auto;
+    width: 85%;
+    background-color: rgb(51, 115, 235);
+    font-weight: 600;
+}
+#title{
+    background-color: rgb(93, 243, 243);
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+#trucks-checked-in{
+    margin: 5px;
+    margin-top: 10px;
+    border-style: solid;
+    border-radius: 1%;
+}
+#trucks-checked-out{
+    margin: 5px;
+    margin-top: 10px;
+    border-style: solid;
+    border-radius: 1%;
+}
+#truck-info{
+    margin: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#save-full-sleeper{
+    float: right;
+    
+}
+#save-single-cab{
+    float: right;
+    margin: 2em;
+}
+#save-single-axle{
+    float: right;
+    margin: 2em;
+}
+.reports{
+    border-style: solid;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+/* legend */
+.legend { list-style: none; }
+.legend li { float: left; margin: 1em; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend .truck-good { background-color: green; }
+.legend .truck-ok { background-color: yellow; }
+.legend .truck-bad { background-color: red; }

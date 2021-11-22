@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+          <meta charset="utf-8" />
+          <link rel="stylesheet" href="css/styles.css">
+          <link rel="stylesheet" href="css/navbar.css">
+          <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        </head>
+            <body>
+              <!--------------Nav Bar------------>
+                <div class="navbar" id="navabr">
+                    <a href="home.html" class="active" id="home">Megan's Fleet</a>
+                    <a href="truck-info.html">Truck Information</a>
+                    <a href="reports.html">View Reports</a>
+                </div>
+                <!--------------End Nav Bar------------>
+
+                <!--------------Start of truck info to view if on road------------>
+                <div class="body">
+                    <p class="title">Trucks on Road</p>
+                        <div class="card-group">
+                            <div class="card">
+                              <div class="card-body" id="full-sleeper">
+                                <h3 class="card-title" id="title" style="font-family: initial;">Full Sleeper</h3>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-body" id="single-cab">
+                                <h3 class="card-title" id="title" style="font-family: initial;">Single Cab</h3>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-body" id="single-axle">
+                                <h3 class="card-title" id="title" style="font-family: initial;">Single Axle</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!--------------end truck info view------------>
+                </div>
+                <div class="body">
+                  <p class="title">Trucks on Lot</p>
+                      <div class="card-group">
+                          <div class="card">
+                            <div class="card-body" id="full-sleeper-lot">
+                              <h3 class="card-title" id="title" style="font-family: initial;">Full Sleeper</h3>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body" id="single-cab-lot">
+                              <h3 class="card-title" id="title" style="font-family: initial;">Single Cab</h3>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body" id="single-axle-lot">
+                              <h3 class="card-title" id="title" style="font-family: initial;">Single Axle</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <!--------------end truck info view------------>
+              </div>
+                <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+                <script type="text/javascript" src="javascript/index.js"></script> 
+            </body>
+    </html>

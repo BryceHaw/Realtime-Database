@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+          <meta charset="utf-8" />
+          <link rel="stylesheet" href="css/styles.css">
+          <link rel="stylesheet" href="css/navbar.css">
+          <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        </head>
+            <body>
+              <!--------------Nav Bar------------>
+                <div class="navbar" id="navabr">
+                    <a href="home.html" id="home">Megan's Fleet</a>
+                    <a href="truck-info.html">Truck Information</a>
+                    <a href="reports.html" class="active">View Reports</a>
+                </div>
+                <!--------------End Nav Bar------------>
+                <ul class="legend">
+                  <li><span class="truck-good "></span>No Maintenance</li>
+                  <li><span class="truck-ok"></span> Maintenance Soon</li>
+                  <li><span class="truck-bad" ></span>Needs Maintenance</li>
+                </ul>
+              <br>
+              <br>
+                <!--Start reports here-->
+                <div class="col-md" id="report-table">
+                  <table class="reports" id="daily-report" style= "width: 85%; margin: auto; margin-top: 1%;">
+                    <H2 style= "width: 85%; margin: auto; margin-top: 1%;font-family: initial">Day Report</H2>
+                    <tr>
+                      <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Driver</th>
+                      <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Truck</th>
+                      <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Odometer</th>
+                      <th style="text-align: center; margin: 5px; padding: 0px; border-style: solid; font-family: initial;">Miles Driven<br>(Today)</th>
+                      <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Maintenance<br>(Miles Remaining)</th>
+                    </tr>
+                  </table>
+                  <!------------------------End of table one--------------------------->
+                  <br>
+                  <br>
+                  <table class="reports" id="weekly-report" style= "width: 85%; margin: auto; margin-top: 1%;">
+                    <H2 style= "width: 85%; margin: auto; font-family: initial">Week Report</H2>                    
+                    <tr>
+                      <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Driver</th>
+                      <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Truck</th>
+                      <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Odometer</th>
+                      <th style="text-align: center; margin: 5px; padding: 0px; border-style: solid; font-family: initial;">Miles Driven<br>(This Week)</th>
+                      <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Maintenance<br>(Miles Remaining)</th>
+                    </tr>      
+                </table>
+                <!------------------------End of table two--------------------------->
+                <br>
+                <br>
+                <table class="reports" id="monthly-report" style= "width: 85%; margin: auto; margin-top: 1%;">
+                  <H2 style= "width: 85%; margin: auto; font-family: initial">Month Report</H2>            
+                  <tr>
+                    <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Driver</th>
+                    <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Truck</th>
+                    <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Odometer</th>
+                    <th style="text-align: center; margin: 5px; padding: 0px; border-style: solid; font-family: initial;">Miles Driven<br>(This Month)</th>
+                    <th style="text-align: center; margin: 5px; padding: 5px; border-style: solid; font-family: initial;">Maintenance<br>(Miles Remaining)</th>
+                  </tr>
+                </table>
+                <br>
+                <br>
+                </div>
+                <!--End reports here-->
+                <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+                <script type="text/javascript" src="javascript/reports.js"></script> 
+            </body>
+    </html>

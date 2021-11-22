@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+          <meta charset="utf-8" />
+          <link rel="stylesheet" href="css/styles.css">
+          <link rel="stylesheet" href="css/navbar.css">
+          <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        </head>
+            <body onload="resetMiles();">
+              <!--------------Nav Bar------------>
+                <div class="navbar" id="navabr">
+                    <a href="home.html" id="home">Megan's Fleet</a>
+                    <a href="truck-info.html" class="active">Truck Information</a>
+                    <a href="reports.html">View Reports</a>
+                </div>
+                <!--------------End Nav Bar------------>
+                 <!--------------Start of trucks columns------------>
+                 <div id="truck-info">
+                   <h1>Currently Viewing: Truck Information</h1>
+                 </div>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md" id="trucks-checked-in">
+                        <h2 style="text-align: center; margin: 5px; padding: 5px; color: green; border-style: solid;">On Lot</h2>
+                      </div>
+                      <div class="col-md" id="trucks-checked-out">
+                        <h2 style="text-align: center; margin: 5px; padding: 5px; color: red; border-style: solid;">On Road</h2>
+                      </div>
+                    </div>
+                  </div>
+                   <!--------------End trucks columns------------>
+                <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+                <script type="text/javascript" src="javascript/checker.js"></script> 
+            </body>
+    </html>

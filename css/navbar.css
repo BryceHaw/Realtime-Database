@@ -1,0 +1,36 @@
+/*CSS for nav menu */
+.navbar{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(#089ee4, blue);
+    
+}
+.navbar a{
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    border-style: solid;
+    border-radius: 3px;
+}
+.navbar>#home{
+    border-style: none;
+    font-size: 24px;
+    transform: none;
+    box-shadow: none;
+}
+.navbar a:hover{
+    opacity: .9;
+    text-decoration: none;
+    color: white;
+    transform: scale(1.1);
+            /* Scaling button to 0.98 to its original size */
+            box-shadow: 3px 2px 22px 1px rgba(107, 107, 107, 0.616);
+}
